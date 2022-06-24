@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 
-export default createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
@@ -11,5 +11,17 @@ export default createGlobalStyle`
   body {
     background: #E7F5F7;
     -webkit-font-smoothing: antialiased;
+  }
+`;
+
+export const darkTheme = css`
+  body {
+    background: #1F1F1F;
+  }
+`;
+
+export const lightTheme = css`
+  body {
+    background: #E7F5F7;
   }
 `;
